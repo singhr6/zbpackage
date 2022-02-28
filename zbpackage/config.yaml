@@ -1,0 +1,2 @@
+alertmanager:http://tibco-app-vp06:9093/api/v2/alerts
+mongodb:mongodb://tibco-adm-vp01:27017/
