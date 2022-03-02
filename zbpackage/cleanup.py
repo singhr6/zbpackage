@@ -11,7 +11,6 @@ import shutil
 def dir_cleanup(cleanup_dir,retention):
     try:
         # initializing some variables
-        deleted_dir = ''
         current_time = time.time()
 
         # Checking directory timestamp and deciding to delete
@@ -24,15 +23,13 @@ def dir_cleanup(cleanup_dir,retention):
                     continue
                 else:
                     shutil.rmtree(path)
-                    deleted_dir=deleted_dir + path + '\n'
             else:
                 continue
 
         return 'success'
 
     except Exception as e:
-        exception_msg="There was exception while run the job. Exception is is " + str(e)
-        return exception_msg
+        return str(e)
 
 
 
@@ -53,8 +50,7 @@ def file_cleanup(cleanup_dir,retention):
         return 'success'
 
     except Exception as e:
-        exception_msg="There was exception while run the job. Exception is is " + str(e)
-        return exception_msg
+        return str(e)
 
 
 # This is for unit test of this module

@@ -40,5 +40,5 @@ def send_mail(fromaddr,toaddr,sub_data,body,fileattach='default'):
 
 if __name__ == "__main__":
     send_mail("python@zimmerbiomet.com","ranjeetkumar.singh@zimmerbiomet.com","ts","test")
-    file="C:\\tmp\\bwagent.tra"
+    file="C:\\Temp\\cpi-script.txt"
     send_mail("python@zimmerbiomet.com","ranjeetkumar.singh@zimmerbiomet.com","ts","test",file)

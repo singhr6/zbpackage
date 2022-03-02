@@ -3,7 +3,6 @@ This module have function to update mongodb nosql database collection.
 '''
 
 import pymongo
-import yaml
 
 # This function add and  update job status with status and time stamp for last run. This return True if successfully added/updated else false
 def send_jobstatus(job_name,status,time,output,joblocation):
